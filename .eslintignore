@@ -1,4 +1,5 @@
 .gitignore
 next.config.js
-*.scss
+*.module.scss
 *.css
+README.md
