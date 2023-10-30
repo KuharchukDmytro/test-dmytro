@@ -1,2 +1,4 @@
 .gitignore
 next.config.js
+*.scss
+*.css
