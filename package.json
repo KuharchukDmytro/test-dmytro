@@ -34,7 +34,8 @@
   },
   "lint-staged": {
     "*.{tsx,css,md}": [
-      "prettier --single-quote --write",
+      "npm run lint",
+      "prettier --write",
       "git add"
     ]
   }
