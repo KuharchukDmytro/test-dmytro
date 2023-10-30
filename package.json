@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "14.0.0",
@@ -28,6 +29,10 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "*.{tsx,css,md}": "npm run lint"
+    "*.tsx": [
+      "npm run format",
+      "npm run lint",
+      "git add"
+    ]
   }
 }
